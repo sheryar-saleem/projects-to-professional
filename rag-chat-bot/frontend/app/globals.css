@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #0c0a09;
+  --color-surface: #1c1917;
+  --color-surface-raised: #292524;
+  --color-border: #44403c;
+  --color-text: #f5f5f4;
+  --color-text-muted: #a8a29e;
+  --color-accent: #10b981;
+  --color-accent-hover: #34d399;
+  --color-warning: #f59e0b;
+  --color-danger: #f43f5e;
+  --color-info: #818cf8;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-warning: var(--color-warning);
+  --color-danger: var(--color-danger);
+  --color-info: var(--color-info);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-geist-sans), sans-serif; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: rgba(16,185,129,.3); }
+
+@media (prefers-color-scheme: light) {
+  :root { --color-bg:#fafaf9; --color-surface:#f5f5f4; --color-surface-raised:#e7e5e4; --color-border:#d6d3d1; --color-text:#1c1917; --color-text-muted:#57534e; }
+}

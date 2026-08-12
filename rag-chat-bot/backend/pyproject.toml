@@ -1,0 +1,26 @@
+[project]
+name = "docmind-backend"
+version = "1.0.0"
+description = "DocMind AI-Powered Enterprise Knowledge Assistant API"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "azure-ai-projects>=2.4.0",
+    "azure-identity>=1.25.3",
+    "fastapi>=0.141.1",
+    "openai>=2.53.0",
+    "python-dotenv>=1.2.2",
+    "uvicorn>=0.52.1",
+    "python-multipart>=0.0.20",
+    "pypdf>=6.0.0",
+    "python-docx>=1.2.0",
+    "pandas>=2.3.0",
+    "openpyxl>=3.1.5",
+    "python-pptx>=1.0.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
